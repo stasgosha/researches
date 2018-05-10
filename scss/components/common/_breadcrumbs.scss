@@ -1,0 +1,42 @@
+.breadcrumbs{
+	display: inline-flex;
+	list-style: none;
+	margin-bottom: 20px;
+
+	li{
+		margin-right: 14px;
+		color: $text-light;
+		font-size: 14px;
+		line-height: 20px;
+		position: relative;
+
+		&:after{
+			content: '';
+			display: block;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: $text-light;
+			position: absolute;
+			right: -10px;
+			top: 8px;
+		}
+
+		&:last-child{
+			margin-right: 0;
+
+			&:after{
+				display: none;
+			}
+		}
+
+		a{
+			color: $text-light;
+			text-decoration: none;
+
+			&:hover{
+				color: $text-color;
+			}
+		}
+	}
+}

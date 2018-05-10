@@ -1,0 +1,44 @@
+.chart-block{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+
+	.chart-title{
+		margin-bottom: 15px;
+
+		h4,h5,h6{
+			font-size: 14px;
+			line-height: 16px;
+			font-weight: bold;
+		}
+	}
+
+	.chart-area{
+
+	}
+
+	&.inline{
+		margin-bottom: 10px;
+		flex-direction: row;
+		align-items: center;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		.chart-title{
+			min-width: 135px;
+			margin-bottom: 0;
+			flex: none;
+			padding-right: 10px;
+		}
+
+		.chart-area{
+			flex: auto;
+		}
+	}
+}

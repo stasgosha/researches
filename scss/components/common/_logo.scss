@@ -1,0 +1,16 @@
+.logo{
+	height: 72px;
+	background: #000;
+	justify-content: center;
+	display: block;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 400;
+
+	&:hover{
+		background: lighten(#000, 10%);
+	}
+}

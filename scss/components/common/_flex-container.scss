@@ -1,0 +1,56 @@
+@mixin col-generator ($prefix:'.col', $prop: 'flex-basis', $total-columns:12) {
+	$col-widths: ();
+	@for $i from 1 through $total-columns {
+		$w: ($i /$total-columns);
+
+		@if not index($col-widths, $w) {
+			#{$prefix}-#{$i} {
+				#{$prop}: $w * 100%;
+				flex-grow: 0;
+			}
+
+			$col-widths: append($col-widths, $w, comma);
+		}
+	}
+}
+
+.flex-container{
+	@include col-generator();
+	@include col-generator('.offset', 'margin-left');
+	flex-wrap: wrap;
+	display: flex;
+
+	&.align-center{
+		align-items: center;
+	}
+
+	&.space-between,
+	.space-between{
+		justify-content: space-between;
+	}
+
+	.item{
+		&.with-right-margin{
+			margin-right: 25px;
+
+			&:last-child{ margin-right: 0; }
+		}
+	}
+
+	.flex-row{
+		display: flex;
+		flex-wrap: wrap;
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		margin-right: -15px;
+
+		.flex-col{
+			padding: 0 15px;
+
+			&.stretch-items{
+				align-items: stretch;
+				display: flex;
+			}
+		}
+	}
+}

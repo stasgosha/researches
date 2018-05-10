@@ -1,0 +1,23 @@
+.user-block{
+	margin-left: 15px;
+
+	.user-avatar{
+		width: 40px;
+		height: 40px;
+		display: block;
+		border-radius: 50%;
+		background: $dark;
+		cursor: pointer;
+		transition: all $t;
+
+		&:hover{
+			opacity: .8;
+		}
+
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+}

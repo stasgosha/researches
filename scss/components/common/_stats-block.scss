@@ -1,0 +1,29 @@
+.stats-list{
+	display: flex;
+	align-items: center;
+
+	> .item{
+		margin-right: 30px;
+
+		&:last-child{ margin-right: 0; }
+	}
+}
+
+.stats-block{
+	display: flex;
+	align-items: center;
+
+	.icon{
+		display: block;
+		margin-right: 8px;
+	}
+
+	span{
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	.btn{
+		margin-left: 8px;
+	}
+}

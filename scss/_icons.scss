@@ -1,0 +1,33 @@
+.icon{
+	display: inline-block;
+
+	&.icon-dollar{
+		background: url(../img/icons/dollar.png) no-repeat center center;
+		width: 18px;
+		height: 17px;
+	}
+
+	&.icon-star{
+		background: url(../img/icons/star.png) no-repeat center center;
+		width: 21px;
+		height: 19px;
+	}
+
+	&.icon-grid{
+		background: url(../img/icons/grid.png) no-repeat center center;
+		width: 20px;
+		height: 20px;
+	}
+
+	&.icon-question{
+		background: url(../img/icons/question.png) no-repeat center center;
+		width: 22px;
+		height: 23px;
+	}
+
+	&.icon-notifications{
+		background: url(../img/icons/notifications.png) no-repeat center center;
+		width: 20px;
+		height: 21px;
+	}
+}

@@ -1,0 +1,33 @@
+.sidebar-nav{
+	list-style: none;
+	width: 100%;
+
+	li{
+		margin-bottom: 2px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		a{
+			font-size: 18px;
+			line-height: 22px;
+			padding: 10px 15px;
+			color: $gray;
+			display: block;
+			text-decoration: none;
+
+			&:hover{
+				background: $dark;
+				color: #fff;
+			}
+		}
+
+		&.current-menu-item{
+			a{
+				background: $dark;
+				color: #fff;
+			}
+		}
+	}
+}
