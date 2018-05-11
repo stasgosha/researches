@@ -23,12 +23,24 @@
 @import "components/common/breadcrumbs";
 @import "components/common/card-block";
 
+// Forms
+@import "components/common/switch";
+
 // Charts
 @import "components/common/chart-block";
 @import "components/common/inline-chart";
+
+// Filters
+@import "components/common/interview-filter";
+@import "components/common/sort-filters";
 
 // News
 @import "components/news/news-block";
 
 // Footer
 @import "components/footer/footer-nav";
+
+// Researches
+@import "components/researches/research-card";
+@import "components/common/action-icons-list";
+@import "components/common/timer-block";

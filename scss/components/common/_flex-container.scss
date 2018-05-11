@@ -40,12 +40,12 @@
 	.flex-row{
 		display: flex;
 		flex-wrap: wrap;
-		width: calc(100% + 30px);
-		margin-left: -15px;
-		margin-right: -15px;
+		width: calc(100% + 20px);
+		margin-left: -10px;
+		margin-right: -10px;
 
 		.flex-col{
-			padding: 0 15px;
+			padding: 0 10px;
 
 			&.stretch-items{
 				align-items: stretch;

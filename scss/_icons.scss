@@ -30,4 +30,40 @@
 		width: 20px;
 		height: 21px;
 	}
+
+	&.icon-edit{
+		background: url(../img/icons/edit.png) no-repeat center center;
+		width: 22px;
+		height: 22px;
+	}
+
+	&.icon-stats{
+		background: url(../img/icons/stats.png) no-repeat center center;
+		width: 28px;
+		height: 25px;
+	}
+
+	&.icon-trash{
+		background: url(../img/icons/trash.png) no-repeat center center;
+		width: 24px;
+		height: 27px;
+	}
+
+	&.icon-clock{
+		background: url(../img/icons/clock.png) no-repeat center center;
+		width: 28px;
+		height: 29px;
+	}
+
+	&.icon-print{
+		background: url(../img/icons/print.png) no-repeat center center;
+		width: 24px;
+		height: 25px;
+	}
+
+	&.icon-cloud{
+		background: url(../img/icons/cloud.png) no-repeat center center;
+		width: 27px;
+		height: 25px;
+	}
 }

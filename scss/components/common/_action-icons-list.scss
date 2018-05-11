@@ -1,0 +1,27 @@
+.action-icons-list{
+	display: flex;
+	align-items: flex-end;
+
+	> *{
+		margin-right: 7px;
+		cursor: pointer;
+		transition: all $t;
+
+		&:hover{
+			opacity: .7;
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		i{
+			display: block;
+		}
+	}
+
+	a{
+		text-decoration: none;
+		display: block;
+	}
+}

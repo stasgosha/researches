@@ -1,0 +1,90 @@
+.interview-filters-list{
+	display: flex;
+	width: 100%;
+	margin-bottom: 30px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.interview-filter{
+		margin-right: 15px;
+		flex-basis: 15.151515%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		max-width: 200px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.interview-filter{
+	background: #e8e8e8;
+	padding: 13px 20px;
+	transition: all $t;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+
+	&:hover{
+		background: darken(#e8e8e8, 10%);
+	}
+
+	.label{
+		font-size: 14px;
+		line-height: 16px;
+		color: $text-light-2;
+		margin-bottom: 4px;
+		transition: all $t;
+		flex: auto;
+	}
+
+	.count{
+		font-size: 36px;
+		line-height: 36px;
+		font-weight: bold;
+		flex: none;
+	}
+
+	.add-new{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-weight: bold;
+
+		.plus{
+			font-size: 30px;
+			line-height: 30px;
+		}
+
+		.text{
+			font-size: 14px;
+			line-height: 14px;
+		}
+	}
+
+	&.current{
+		background: $gray;
+		color: #fff;
+
+		.label{
+			color: #fff;
+		}
+	}
+
+	&.dark{
+		background: $dark;
+		color: #fff;
+
+		.label{
+			color: #fff;
+		}
+
+		&:hover{
+			background: $medium-dark;
+		}
+	}
+}

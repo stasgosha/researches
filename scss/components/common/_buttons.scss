@@ -31,6 +31,14 @@
 			}
 		}
 
+		&.btn-lightgray{
+			background: $lightgray;
+
+			&:hover{
+				background: darken($lightgray, 10%);
+			}
+		}
+
 		// &.btn-medium{
 		// 	border-width: 1px;
 		// 	padding: 5px 20px;
@@ -38,10 +46,11 @@
 		// 	font-size: 12px;
 		// }
 
-		// &.btn-big{
-		// 	padding: 10px 24px;
-		// 	border-radius: 20px;
-		// }
+		&.btn-big{
+			padding: 15px 55px;
+			font-size: 18px;
+			line-height: 24px;
+		}
 	}
 
 	// &.btn-light{

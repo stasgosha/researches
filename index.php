@@ -8,10 +8,10 @@
 			<div class="page-content page-text">
 				<ul class="breadcrumbs">
 					<li><a href="index.php">Главная</a></li>
-					<li>Экспресс-панель</li>
+					<li><?= $page_title ?></li>
 				</ul>
 				<div class="page-header">
-					<h1>Экспресс панель</h1>
+					<h1><?= $page_title ?></h1>
 				</div>
 				<div class="flex-container">
 					<div class="flex-row space-between">
