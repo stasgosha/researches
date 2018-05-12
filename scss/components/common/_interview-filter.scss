@@ -18,6 +18,12 @@
 			margin-right: 0;
 		}
 	}
+
+	&.stretch-items{
+		.interview-filter{
+			max-width: 100%;
+		}
+	}
 }
 
 .interview-filter{
