@@ -1,6 +1,6 @@
 					<div class="footer">
 						<div class="footer-left">
-							<p>© 2018 Название проекта</p>
+							<p>© <?= date("Y"); ?> Название проекта</p>
 						</div>
 						<div class="footer-right">
 							<ul class="footer-nav">

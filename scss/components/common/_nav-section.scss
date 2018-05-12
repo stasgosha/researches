@@ -1,0 +1,24 @@
+.nav-section{
+	display: flex;
+	background: $light;
+	padding: 0 15px;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 30px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.section-name{
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: bold;
+		min-width: 120px;
+		flex: none;
+	}
+
+	.section-content{
+		flex: auto;
+	}
+}

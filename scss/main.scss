@@ -22,9 +22,14 @@
 @import "components/common/buttons";
 @import "components/common/breadcrumbs";
 @import "components/common/card-block";
+@import "components/common/steps";
+@import "components/common/nav-section";
+@import "components/common/tabs-nav";
+
 
 // Forms
 @import "components/common/switch";
+@import "components/common/upload-image-block";
 
 // Charts
 @import "components/common/chart-block";
@@ -33,6 +38,9 @@
 // Filters
 @import "components/common/interview-filter";
 @import "components/common/sort-filters";
+
+// Forms
+@import "components/forms/forms";
 
 // News
 @import "components/news/news-block";

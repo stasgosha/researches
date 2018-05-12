@@ -10,7 +10,7 @@
 					<li><a href="index.php">Главная</a></li>
 					<li><?= $page_title ?></li>
 				</ul>
-				<div class="page-header">
+				<div class="page-header big-margin">
 					<h1><?= $page_title ?></h1>
 				</div>
 				<div class="flex-container">

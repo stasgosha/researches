@@ -1,0 +1,52 @@
+.steps-list{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	> .item{
+		display: flex;
+		margin-right: 15px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.step-block{
+	display: flex;
+	padding: 15px 10px;
+	background: #e8e8e8;
+	font-size: 14px;
+	line-height: 1em;
+	color: $text-light-2;
+	text-decoration: none;
+	transition: all $t;
+	align-items: center;
+
+	.step{
+		color: #d1d1d1;
+		transition: color $t;
+		font-size: 48px;
+		line-height: 1em;
+		font-weight: bold;
+		margin-right: 10px;
+		flex: none;
+	}
+
+	.text{
+		flex: auto;
+	}
+
+	&:hover,
+	&.active{
+		&:not(.disabled){
+			background: $gray;
+			color: #fff;
+
+			.step{
+				color: rgba(#fff, .32);
+			}
+		}
+	}
+}

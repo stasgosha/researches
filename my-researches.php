@@ -14,32 +14,32 @@
 					<h1><?= $page_title ?></h1>
 				</div>
 				<div class="interview-filters-list stretch-items">
-					<div class="interview-filter current">
+					<a href="#" class="interview-filter current">
 						<div class="label">Все</div>
 						<div class="count">10</div>
-					</div>
-					<div class="interview-filter">
+					</a>
+					<a href="#" class="interview-filter">
 						<div class="label">Активные</div>
 						<div class="count">5</div>
-					</div>
-					<div class="interview-filter">
+					</a>
+					<a href="#" class="interview-filter">
 						<div class="label">Черновики</div>
 						<div class="count">3</div>
-					</div>
-					<div class="interview-filter">
+					</a>
+					<a href="#" class="interview-filter">
 						<div class="label">В ожидании</div>
 						<div class="count">2</div>
-					</div>
-					<div class="interview-filter">
+					</a>
+					<a href="#" class="interview-filter">
 						<div class="label">Завершенные</div>
 						<div class="count">0</div>
-					</div>
-					<div class="interview-filter dark">
+					</a>
+					<a href="create-new-research.php" class="interview-filter dark">
 						<div class="add-new">
 							<span class="plus">+</span>
 							<span class="text">Создать <br>опрос</span>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="sort-filters-section">
 					<div class="caption">
