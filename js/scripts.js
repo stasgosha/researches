@@ -18,26 +18,26 @@ $(document).ready(function(){
 	});
 
 	// Research card
-	// $(function(){
-	// 	$('.research-card').hover(function(){
-	// 		var card = $(this);
-	// 		var overlay = card.children('.card-overlay');
-	// 		var cardHeight = card.outerHeight();
-	// 		var hiddenContent = card.children('.card-hidden-content');
-	// 		var hiddenContentHeight = hiddenContent.outerHeight();
+	$(function(){
+		$('.research-card').hover(function(){
+			var card = $(this);
+			var overlay = card.children('.card-overlay');
+			var cardHeight = card.outerHeight();
+			var hiddenContent = card.children('.card-hidden-content');
+			var hiddenContentHeight = hiddenContent.outerHeight();
 
-	// 		hiddenContent.stop().show();
-	// 		overlay.css({"height": (cardHeight + hiddenContentHeight) + "px"}, 300);
-	// 	}, function(){
-	// 		var card = $(this);
-	// 		var overlay = card.children('.card-overlay');
-	// 		var cardHeight = card.outerHeight();
-	// 		var hiddenContent = card.children('.card-hidden-content');
-	// 		var hiddenContentHeight = hiddenContent.outerHeight();
+			hiddenContent.stop().show();
+			overlay.css({"height": (cardHeight + hiddenContentHeight) + "px"}, 300);
+		}, function(){
+			var card = $(this);
+			var overlay = card.children('.card-overlay');
+			var cardHeight = card.outerHeight();
+			var hiddenContent = card.children('.card-hidden-content');
+			var hiddenContentHeight = hiddenContent.outerHeight();
 
-	// 		hiddenContent.stop().hide();
-	// 		overlay.css({"height": cardHeight + "px"}, 300);
-	// 	});
-	// });
+			hiddenContent.stop().hide();
+			overlay.css({"height": cardHeight + "px"}, 300);
+		});
+	});
 
 });
