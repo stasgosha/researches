@@ -1,0 +1,40 @@
+.question-editor{
+	display: flex;
+
+	.editor-sidebar{
+		width: 215px;
+		margin-right: 15px;
+		flex: none;
+		background: #ddd;
+		position: relative;
+		max-height: 350px;
+
+		.scrollable-sidebar{
+			height: 100%;
+		}
+	}
+
+	.editor-content{
+		display: flex;
+		flex-direction: column;
+
+		.edit-question-section{
+			img{
+				max-width: 100%;
+				display: block;
+				height: auto;
+			}
+		}
+
+		.add-question-btn{
+			margin-top: 25px;
+			max-width: 300px;
+			width: 100%;
+			align-self: center;
+
+			.btn{
+				width: 100%;
+			}
+		}
+	}
+}

@@ -6,6 +6,10 @@
 	width: 100%;
 	margin-bottom: 30px;
 
+	&.no-margin{
+		margin-bottom: 0;
+	}
+
 	.form-row{
 		margin-bottom: 30px;
 
@@ -15,6 +19,21 @@
 
 		&.big-margin{
 			margin-bottom: 40px;
+		}
+
+		&.inline{
+			display: flex;
+			align-items: center;
+
+			.form-label{
+				flex: none;
+				padding-right: 25px;
+				min-width: 170px;
+			}
+
+			.form-field{
+				flex: auto;
+			}
 		}
 	}
 
@@ -39,6 +58,10 @@
 		&:placeholder{
 			color: #9c9c9c;
 		}
+
+		&.small{
+			height: 32px;
+		}
 	}
 
 	textarea{
@@ -57,32 +80,6 @@
 		border: 0;
 	}
 
-	.select{
-		overflow: hidden;
-		position: relative;
-		border: 1px solid #ddd;
-		transition: all $t;
-
-		&:focus{
-			border-color: $dark;
-		}
-
-		select{
-			width: calc(100% + 20px);
-		}
-
-		&:after{
-			content: '';
-			display: block;
-			width: 8px;
-			height: 5px;
-			background: url(../img/icons/opener.png) no-repeat center center;
-			position: absolute;
-			right: 13px;
-			top: calc(50% - 2px);
-		}
-	}
-
 	.from-to-fields{
 		display: flex;
 
@@ -94,6 +91,32 @@
 				margin-right: 0;
 			}
 		}
+	}
+}
+
+.select{
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #ddd;
+	transition: all $t;
+
+	&:focus{
+		border-color: $dark;
+	}
+
+	select{
+		width: calc(100% + 20px);
+	}
+
+	&:after{
+		content: '';
+		display: block;
+		width: 8px;
+		height: 5px;
+		background: url(../img/icons/opener.png) no-repeat center center;
+		position: absolute;
+		right: 13px;
+		top: calc(50% - 2px);
 	}
 }
 
@@ -130,6 +153,35 @@
 		&[disabled]{
 			+ label{
 				cursor: default;
+			}
+		}
+	}
+}
+
+.radio-list{
+	.item{
+		input{
+			display: none;
+		}
+
+		label{
+			display: flex;
+			height: 45px;
+			font-size: 14px;
+			line-height: 17px;
+			padding: 9px 20px;
+			transition: all $t;
+			cursor: pointer;
+			align-items: center;
+
+			&:hover{
+				background: $gray;
+			}
+		}
+
+		input:checked{
+			+ label{
+				background: $gray;
 			}
 		}
 	}

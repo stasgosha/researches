@@ -25,7 +25,7 @@
 @import "components/common/steps";
 @import "components/common/nav-section";
 @import "components/common/tabs-nav";
-
+@import "components/common/scrollable-sidebar";
 
 // Forms
 @import "components/common/switch";
@@ -52,3 +52,10 @@
 @import "components/researches/research-card";
 @import "components/common/action-icons-list";
 @import "components/common/timer-block";
+@import "components/researches/create-new";
+
+// Create new research
+@import "components/common/auditory-card";
+
+// Question editor
+@import "components/question-editor/question-editor";

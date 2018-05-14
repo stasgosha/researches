@@ -203,7 +203,59 @@
 								</div>
 							</div>
 						</div>
-						<div class="flex-col col-4"></div>
+						<div class="flex-col col-4">
+							<div class="card-block">
+								<div class="auditory-card">
+									<div class="form auditory-form no-margin">
+										<div class="caption">Стоимость аудитории <br>
+											<span id="auditoryPrice">100$</span>
+										</div>
+										<div class="coverage">Охват: <span>1000</span> чел.</div>
+										<div class="select-range">
+											<img src="img/temp/range.png" alt="">
+										</div>
+										<div class="desired-quantity">
+											<div class="label">Желаемое <br>количество</div>
+											<div class="field">
+												<input type="tel" class="small">
+											</div>
+											<div class="button">
+												<div class="btn btn-default btn-submit">OK</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-block">
+								<div class="auditory-card">
+									<div class="flex-container">
+										<div class="flex-row">
+											<div class="flex-col col-6">
+												<div class="chart-block">
+													<div class="chart-title">
+														<h6>Мужчины</h6>
+													</div>
+													<div class="chart-area">
+														<img src="img/temp/chart-80.png" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="flex-col col-6">
+												<div class="chart-block">
+													<div class="chart-title">
+														<h6>Женщины</h6>
+													</div>
+													<div class="chart-area">
+														<img src="img/temp/chart-20.png" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="coverage">Всего: <span>1000</span> чел.</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
