@@ -15,6 +15,7 @@
 		</div>
 	</div>
 	<script src="js/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/e6756a4761.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>

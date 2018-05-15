@@ -40,4 +40,17 @@ $(document).ready(function(){
 		});
 	});
 
+	// Logic card
+	$(function(){
+		$('.logic-card .card-title, .logic-card .card-opener').click(function(){
+			$(this).closest('.logic-card').toggleClass('opened');
+			$(this).closest('.logic-card').children('.card-content').slideToggle(300);
+		});
+
+		$('.condition-card .condition-title, .condition-card .minimize').click(function(){
+			$(this).closest('.condition-card').toggleClass('closed');
+			$(this).closest('.condition-card').children('.condition-content').slideToggle(300);
+		});
+	});
+
 });

@@ -78,6 +78,9 @@
 		outline: none !important;
 		transition: all $t;
 		border: 0;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 
 	.from-to-fields{
@@ -90,6 +93,31 @@
 			&:last-child{
 				margin-right: 0;
 			}
+		}
+	}
+}
+
+.logic-form{
+	.form-label{
+		width: 95px;
+		color: $gray;
+	}
+
+	.form-field{
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="url"],
+		input[type="tel"],
+		.select{
+			width: 180px;
+			font-size: 14px;
+			color: #9c9c9c;
+		}
+
+		.select select{
+			font-size: 14px;
+			color: #9c9c9c;
 		}
 	}
 }
@@ -153,6 +181,92 @@
 		&[disabled]{
 			+ label{
 				cursor: default;
+			}
+		}
+	}
+}
+
+.checkboxes-list{
+	display: flex;
+	align-items: center;
+
+	> .item{
+		margin-right: 40px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.checkbox-block{
+	label{
+		min-width: 95px;
+		font-size: 14px;
+		line-height: 22px;
+		color: $dark;
+		text-align: center;
+		transition: all $t;
+		cursor: pointer;
+		padding-left: 35px;
+		position: relative;
+		user-select: none;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid $gray;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -11px;
+			transition: all $t;
+		}
+
+		&:after{
+			width: 0;
+			height: 0;
+			border: 3px solid transparent;
+			left: 6px;
+			top: 10px;
+			content: '';
+			display: block;
+			position: absolute;
+			transform: rotateZ(0deg);
+			transform-origin: 100% 100%;
+			transition: all $t;
+		}
+	}
+
+	input{
+		display: none;
+
+		&:checked{
+			+ label{
+				&:before{
+					background: $gray;
+				}
+
+				&:after{
+					top: 0px;
+					left: 1px;
+					width: 6px;
+					height: 11px;
+					border-top: 2px solid transparent;
+					border-left: 2px solid transparent;
+					border-right: 2px solid #fff;
+					border-bottom: 2px solid #fff;
+					transform: rotateZ(37deg);
+				}
+			}
+		}
+
+		&[disabled]{
+			+ label{
+				cursor: default;
+				color: $gray;
 			}
 		}
 	}

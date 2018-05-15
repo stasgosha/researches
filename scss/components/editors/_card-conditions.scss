@@ -1,0 +1,59 @@
+.card-conditions{
+	display: flex;
+	align-items: center;
+	flex: none;
+
+	.block-add{
+		flex: none;
+		margin-right: 7px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #707070;
+		transition: all $t;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+
+		&:hover{
+			background: darken(#707070, 10%);
+		}
+
+		span{
+			display: block;
+			color: #fff;
+			font-size: 14px;
+			line-height: 12px;
+		}
+	}
+
+	.block-text{
+		.add-text{
+			font-size: 14px;
+			line-height: 14px;
+			color: $text-color;
+			margin-bottom: 3px;
+		}
+
+		.conditions-count{
+			font-size: 12px;
+			line-height: 14px;
+			color: #919191;
+		}
+	}
+}
+
+a.card-conditions{
+	text-decoration: none;
+
+	.block-text{
+		transition: all $t;
+	}
+
+	&:hover{
+		.block-text{
+			opacity: .8;
+		}
+	}
+}

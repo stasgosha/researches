@@ -1,0 +1,151 @@
+.logic-editor{
+	.logic-page{
+		.logic-page-caption{
+			min-height: 50px;
+			padding: 5px 30px;
+			display: flex;
+			align-items: center;
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: 400;
+			color: #fff;
+			margin-bottom: 2px;
+			background: $gray;
+		}
+
+		.logic-card{
+			background: $light;
+			margin-bottom: 2px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			> .card-header{
+				min-height: 50px;
+				padding: 5px 20px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				> .card-title{
+					font-size: 14px;
+					line-height: 18px;
+					color: $gray;
+					flex: auto;
+					font-weight: 400;
+					transition: all $t;
+					cursor: pointer;
+				}
+
+				> .card-opener{
+					margin-left: 25px;
+					flex: none;
+					cursor: pointer;
+					color: #404040;
+					transition: all $t;
+
+					&:hover{
+						color: $dark;
+					}
+
+					i{
+						display: block;
+					}
+				}
+
+				&:hover{
+					> .card-title{
+						color: $dark;
+					}
+				}
+			}
+
+			> .card-content{
+				padding: 15px 20px;
+				border-top: 1px solid #ddd;
+				display: none;
+
+				.condition-cards{
+					margin-bottom: 15px;
+				}
+			}
+
+			&.opened{
+				.card-header{
+					.card-opener{
+						transform: rotate(-180deg);
+					}
+				}
+			}
+		}
+	}
+}
+
+// Condition card
+.condition-card{
+	background: #fff;
+	margin-bottom: 10px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.condition-header{
+		display: flex;
+		align-items: center;
+		padding: 5px 15px;
+		height: 35px;
+
+		.condition-title{
+			flex: auto;
+			font-size: 14px;
+			line-height: 18px;
+			cursor: pointer;
+		}
+
+		.condition-actions{
+			flex: none;
+			display: flex;
+			align-items: center;
+
+			.item{
+				cursor: pointer;
+				margin-right: 8px;
+				color: #919191;
+				transition: all $t;
+				position: relative;
+
+				&:after{
+					content: '';
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+					z-index: 2;
+				}
+
+				i{
+					display: block;
+					font-size: 18px;
+					line-height: 18px;
+				}
+
+				&:hover{
+					color: darken(#919191, 10%);
+				}
+
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.condition-content{
+		display: none;
+		padding: 10px 15px;
+	}
+}

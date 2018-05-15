@@ -57,5 +57,7 @@
 // Create new research
 @import "components/common/auditory-card";
 
-// Question editor
-@import "components/question-editor/question-editor";
+// Editors
+@import "components/editors/question-editor";
+@import "components/editors/logic-editor";
+@import "components/editors/card-conditions";
