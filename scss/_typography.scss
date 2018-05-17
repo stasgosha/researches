@@ -8,6 +8,18 @@
 		&:last-child{
 			margin-bottom: 0;
 		}
+
+		&.gray{
+			color: #9c9c9c;
+		}
+
+		&.dark{
+			color: $dark;
+		}
+
+		&.bigger{
+			font-size: 14px;
+		}
 	}
 }
 

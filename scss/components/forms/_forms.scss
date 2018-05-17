@@ -13,6 +13,10 @@
 	.form-row{
 		margin-bottom: 30px;
 
+		.form-label{
+			margin-bottom: 5px;
+		}
+
 		&:last-child{
 			margin-bottom: 0 !important;
 		}
@@ -69,7 +73,7 @@
 
 	textarea{
 		resize: none;
-		height: 120px;
+		height: 95px;
 		padding: 5px 10px;
 	}
 
@@ -121,7 +125,7 @@
 
 		.form-row{
 			.form-label{
-				min-width: 210px;
+				width: 210px;
 			}
 
 			.form-field{
@@ -130,6 +134,10 @@
 
 				&.wide{
 					width: 300px;
+				}
+
+				&.fullwidth{
+					flex: auto;
 				}
 			}
 		}
