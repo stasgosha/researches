@@ -72,7 +72,7 @@
 					<div class="form-row">
 						<div class="steps-list">
 							<div class="item">
-								<a href="create-new-research-step.php" class="step-block active">
+								<a href="create-new-research.php" class="step-block active">
 									<span class="step">1</span>
 									<span class="text">Выбор целевой аудитории</span>
 								</a>

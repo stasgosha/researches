@@ -28,7 +28,7 @@
 					<div class="form-row">
 						<div class="steps-list">
 							<div class="item">
-								<a href="create-new-research-step.php" class="step-block active">
+								<a href="create-new-research.php" class="step-block active">
 									<span class="step">1</span>
 									<span class="text">Выбор целевой аудитории</span>
 								</a>
@@ -46,7 +46,7 @@
 								</a>
 							</div>
 							<div class="item">
-								<a href="#" class="step-block">
+								<a href="create-new-research-step-4.php" class="step-block">
 									<span class="step">4</span>
 									<span class="text">Настройка дизайна</span>
 								</a>

@@ -1,0 +1,21 @@
+.question-preview{
+	background: #ededed;
+	padding: 10px 30px;
+	width: 100%;
+
+	.caption{
+		font-size: 14px;
+		line-height: 18px;
+		color: #a5a5a5;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.question-title{
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+}

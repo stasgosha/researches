@@ -53,4 +53,14 @@ $(document).ready(function(){
 		});
 	});
 
+	// Tabs nav
+	$("[data-tab]").click(function(e){
+		e.preventDefault();
+		var dest = $( $(this).data('tab') );
+		dest.stop().fadeIn(300).siblings().hide(0);
+		$(this).parent().addClass('current').siblings().removeClass('current');
+	});
+
+	$("*:first-child > [data-tab]").click();
+
 });

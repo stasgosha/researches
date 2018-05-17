@@ -1,0 +1,16 @@
+.font-params{
+	display: flex;
+	align-items: center;
+
+	.item{
+		margin-right: 10px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&.font-size{
+			width: 65px;
+		}
+	}
+}

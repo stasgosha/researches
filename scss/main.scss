@@ -26,6 +26,7 @@
 @import "components/common/nav-section";
 @import "components/common/tabs-nav";
 @import "components/common/scrollable-sidebar";
+@import "components/common/font-params";
 
 // Forms
 @import "components/common/switch";
@@ -56,6 +57,7 @@
 
 // Create new research
 @import "components/common/auditory-card";
+@import "components/common/question-preview";
 
 // Editors
 @import "components/editors/question-editor";

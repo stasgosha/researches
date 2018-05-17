@@ -25,6 +25,13 @@
 			padding: 2px 7px;
 		}
 
+		&.btn-square{
+			width: 38px;
+			height: 38px;
+			padding: 0;
+			align-items: center;
+		}
+
 		&.btn-submit{
 			padding: 7px 6px;
 			font-weight: bold;
@@ -44,6 +51,15 @@
 
 			&:hover{
 				background: darken($lightgray, 10%);
+			}
+		}
+
+		&.btn-light{
+			background: #ececec;
+			color: $text-color;
+
+			&:hover{
+				background: darken(#ececec, 10%);
 			}
 		}
 
