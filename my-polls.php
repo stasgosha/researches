@@ -13,34 +13,27 @@
 				<div class="page-header">
 					<h1><?= $page_title ?></h1>
 				</div>
-				<div class="interview-filters-list stretch-items">
-					<div class="interview-filter current">
+				<div class="params-list stretch-items">
+					<a href="#" class="params-block current">
 						<div class="label">Все</div>
 						<div class="count">10</div>
-					</div>
-					<div class="interview-filter">
+					</a>
+					<a href="#" class="params-block">
 						<div class="label">Новые</div>
 						<div class="count">5</div>
-					</div>
-					<div class="interview-filter">
+					</a>
+					<a href="#" class="params-block">
 						<div class="label">Незавершенные</div>
 						<div class="count">3</div>
-					</div>
-					<div class="interview-filter">
+					</a>
+					<a href="#" class="params-block">
 						<div class="label">Завершенные</div>
 						<div class="count">2</div>
-					</div>
-					<div class="interview-filter">
+					</a>
+					<a href="#" class="params-block">
 						<div class="label">Просроченные</div>
 						<div class="count">0</div>
-					</div>
-					<!-- Add new poll block -->
-					<!-- <div class="interview-filter dark">
-						<div class="add-new">
-							<span class="plus">+</span>
-							<span class="text">Создать <br>опрос</span>
-						</div>
-					</div> -->
+					</a>
 				</div>
 				<div class="sort-filters-section">
 					<div class="caption">

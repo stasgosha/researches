@@ -27,6 +27,9 @@
 @import "components/common/tabs-nav";
 @import "components/common/scrollable-sidebar";
 @import "components/common/font-params";
+@import "components/common/tables";
+@import "components/common/gray-section";
+@import "components/common/share-link-block";
 
 // Forms
 @import "components/common/switch";
@@ -37,7 +40,7 @@
 @import "components/common/inline-chart";
 
 // Filters
-@import "components/common/interview-filter";
+@import "components/common/params-list";
 @import "components/common/sort-filters";
 
 // Forms
@@ -63,3 +66,7 @@
 @import "components/editors/question-editor";
 @import "components/editors/logic-editor";
 @import "components/editors/card-conditions";
+
+// Research info
+@import "components/common/info-list";
+@import "components/common/question-results-block";

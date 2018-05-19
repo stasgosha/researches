@@ -13,28 +13,28 @@
 				<div class="page-header">
 					<h1><?= $page_title ?></h1>
 				</div>
-				<div class="interview-filters-list stretch-items">
-					<a href="#" class="interview-filter current">
+				<div class="params-list stretch-items">
+					<a href="#" class="params-block current">
 						<div class="label">Все</div>
 						<div class="count">10</div>
 					</a>
-					<a href="#" class="interview-filter">
+					<a href="#" class="params-block">
 						<div class="label">Активные</div>
 						<div class="count">5</div>
 					</a>
-					<a href="#" class="interview-filter">
+					<a href="#" class="params-block">
 						<div class="label">Черновики</div>
 						<div class="count">3</div>
 					</a>
-					<a href="#" class="interview-filter">
+					<a href="#" class="params-block">
 						<div class="label">В ожидании</div>
 						<div class="count">2</div>
 					</a>
-					<a href="#" class="interview-filter">
+					<a href="#" class="params-block">
 						<div class="label">Завершенные</div>
 						<div class="count">0</div>
 					</a>
-					<a href="create-new-research.php" class="interview-filter dark">
+					<a href="create-new-research.php" class="params-block dark">
 						<div class="add-new">
 							<span class="plus">+</span>
 							<span class="text">Создать <br>опрос</span>
@@ -80,9 +80,9 @@
 					<div class="researches-cards-list">
 						<div class="research-card">
 							<div class="card-overlay"></div>
-							<a href="#" class="card-image" style="background-image: url()"></a>
+							<a href="research-page.php" class="card-image" style="background-image: url()"></a>
 							<div class="card-name">
-								<h5><a href="#">Длинное название опроса в несколько строк</a></h5>
+								<h5><a href="research-page.php">Длинное название опроса в несколько строк</a></h5>
 							</div>
 							<div class="card-section">
 								<div class="item">
@@ -159,9 +159,9 @@
 						<?php for ($i = 0; $i < 5; $i++): ?>
 							<div class="research-card">
 								<div class="card-overlay"></div>
-								<a href="#" class="card-image" style="background-image: url()"></a>
+								<a href="research-page.php" class="card-image" style="background-image: url()"></a>
 								<div class="card-name">
-									<h5><a href="#">Название</a></h5>
+									<h5><a href="research-page.php">Название</a></h5>
 								</div>
 								<div class="card-section">
 									<div class="item">

@@ -1,4 +1,4 @@
-.interview-filters-list{
+.params-list{
 	display: flex;
 	width: 100%;
 	margin-bottom: 30px;
@@ -7,7 +7,7 @@
 		margin-bottom: 0;
 	}
 
-	.interview-filter{
+	.params-block{
 		margin-right: 15px;
 		flex-basis: 15.151515%;
 		flex-grow: 1;
@@ -20,13 +20,13 @@
 	}
 
 	&.stretch-items{
-		.interview-filter{
+		.params-block{
 			max-width: 100%;
 		}
 	}
 }
 
-.interview-filter{
+.params-block{
 	background: #e8e8e8;
 	padding: 13px 20px;
 	transition: all $t;
@@ -36,7 +36,11 @@
 	text-decoration: none;
 	color: $text-color;
 
-	&:hover{
+	&.no-link{
+		cursor: default;
+	}
+
+	&:not(.no-link):hover{
 		background: darken(#e8e8e8, 10%);
 	}
 

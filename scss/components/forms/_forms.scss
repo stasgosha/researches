@@ -69,6 +69,16 @@
 		&.small{
 			height: 32px;
 		}
+
+		&.gray-bg{
+			border: 1px solid #ececec;
+			background: #ececec;
+
+			&:focus{
+				background: #fff;
+				border-color: $dark;
+			}
+		}
 	}
 
 	textarea{
@@ -281,14 +291,30 @@
 		}
 	}
 
+	&.big{
+		label{
+			height: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $text-color;
+		}
+	}
+
 	&.gray{
 		label{
 			background: #ececec;
 			border: 0;
 			color: $text-color;
+		}
 
-			&:hover{
-				background: darken(#ececec, 10%);
+		input{
+			&:not([disabled]){
+				+ label{
+					&:hover{
+						background: darken(#ececec, 10%);
+					}
+				}
 			}
 		}
 
@@ -388,7 +414,7 @@
 }
 
 .radio-list{
-	.item{
+	> .item{
 		input{
 			display: none;
 		}
@@ -413,6 +439,19 @@
 				background: $gray;
 			}
 		}
+	}
+}
+
+.radio-grid{
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	display: flex;
+
+	> .item{
+		width: calc(33.33333% - 20px);
+		margin-bottom: 15px;
+		flex: none;
 	}
 }
 

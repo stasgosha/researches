@@ -1,0 +1,57 @@
+.question-results-block{
+	.question-number{
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 5px;
+		color: #aeaeae;
+	}
+
+	.question-text{
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 5px;
+	}
+
+	.question-stats{
+		display: flex;
+		margin-bottom: 15px;
+		list-style: none;
+
+		li{
+			margin-right: 25px;
+			font-size: 14px;
+			line-height: 16px;
+			color: #aeaeae;
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+
+	.question-chart-type-list{
+		list-style: none;
+		display: flex;
+		margin-bottom: 20px;
+
+		li{
+			margin-right: 10px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+
+	.question-chart{
+		margin-bottom: 20px;
+
+		img{
+			max-width: 100%;
+			display: block;
+			height: auto;
+		}
+	}
+
+	.question-stats-table{}
+}

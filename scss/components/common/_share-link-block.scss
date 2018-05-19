@@ -1,0 +1,23 @@
+.share-link-block{
+	display: flex;
+	width: 100%;
+
+	.block-input{
+		flex: auto;
+		margin-right: 10px;
+		display: flex;
+
+		input[type="text"],
+		input[type="url"]{
+			flex: auto;
+		}
+
+		.btn{
+			flex: none;
+		}
+	}
+
+	.block-share-button{
+		flex: none;
+	}
+}
