@@ -83,4 +83,8 @@ hr{
 	height: 1px;
 	background: #ddd;
 	clear: both;
+
+	&.medium-margins{
+		margin: 30px 0;
+	}
 }

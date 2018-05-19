@@ -305,6 +305,72 @@
 		}
 	}
 
+	&.type-circle{
+		label{
+			padding: 0;
+			padding-left: 30px;
+			background: transparent !important;
+			max-width: 100%;
+			border: none;
+			text-align: left;
+			position: relative;
+			color: $dark;
+			min-height: 18px;
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: bold;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				background: #ddd;
+				position: absolute;
+				left: 0;
+				top: calc(50% - 9px);
+				transition: all $t;
+			}
+
+			&:after{
+				content: '';
+				display: block;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: #ddd;
+				position: absolute;
+				left: 4px;
+				top: calc(50% - 5px);
+				background: $dark;
+				transition: all $t;
+				opacity: 0;
+			}
+
+			&:hover{
+				background: transparent !important;
+
+				&:after{
+					opacity: .5;
+				}
+			}
+		}
+
+		input{
+			&:checked{
+				+ label{
+					background: transparent !important;
+					color: $dark !important;
+
+					&:after{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
 	&.squared{
 		label{
 			padding: 3px;
@@ -537,5 +603,26 @@
 
 	.btn{
 		flex: none;
+	}
+}
+
+.controls-list{
+	display: flex;
+	flex-wrap: wrap;
+
+	> .item{
+		margin-right: 50px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.settings-form{
+	max-width: 615px;
+
+	.form-row.inline .form-label{
+		min-width: 215px;
 	}
 }
