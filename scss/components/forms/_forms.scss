@@ -475,9 +475,38 @@
 	display: flex;
 
 	> .item{
-		width: calc(33.33333% - 20px);
+		width: calc(33.33333% - 13.33333px);
 		margin-bottom: 15px;
 		flex: none;
+	}
+
+	&.pay-systems{
+		> .item{
+			.radio-block{
+				input{
+					+ label{
+						height: 70px;
+						align-items: center;
+						justify-content: center;
+						display: flex;
+						// filter: grayscale(100);
+
+						&:hover{
+							background: transparent !important;
+							// filter: grayscale(0);
+						}
+					}
+
+					&:checked{
+						+ label{
+							background: transparent !important;
+							border-color: $dark;
+							filter: grayscale(0);
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -495,4 +524,18 @@
 
 .support-form{
 	max-width: 345px;
+}
+
+.payment-form{
+	display: flex;
+	max-width: 445px;
+
+	input{
+		flex: auto;
+		margin-right: 10px;
+	}
+
+	.btn{
+		flex: none;
+	}
 }
