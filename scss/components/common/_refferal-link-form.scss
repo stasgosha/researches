@@ -1,0 +1,14 @@
+.refferal-link-form{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 435px;
+
+	.refferal-link{
+		flex: auto;
+	}
+
+	.refferal-button{
+		flex: none;
+	}
+}

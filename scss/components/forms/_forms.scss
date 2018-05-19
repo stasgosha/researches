@@ -100,6 +100,32 @@
 		white-space: nowrap;
 	}
 
+	&.gray-fields{
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="url"],
+		input[type="tel"],
+		textarea{
+			border: 1px solid #ececec;
+			background: #ececec;
+
+			&:focus{
+				background: #fff;
+				border-color: $dark;
+			}
+		}
+
+		select{
+			border: 1px solid #ececec;
+			background: #ececec;
+
+			&:focus{
+				background: #fff;
+			}
+		}
+	}
+
 	.from-to-fields{
 		display: flex;
 

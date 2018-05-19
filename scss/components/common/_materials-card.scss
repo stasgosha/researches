@@ -1,0 +1,42 @@
+.materials-card{
+	margin-bottom: 50px;
+	display: flex;
+	width: 100%;
+
+	&.no-margin{ margin-bottom: 0; }
+
+	.card-preview{
+		flex: auto;
+		height: 90px;
+		background: $gray; // remove when not needed
+
+		img{
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	.card-text{
+		padding: 10px 30px;
+		flex: none;
+		width: 300px;
+
+		.card-name{
+			font-size: 14px;
+			line-height: 20px;
+			color: $violet;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		.card-link{
+			font-size: 12px;
+			line-height: 14px;
+			color: #141820;
+			word-wrap: break-word;
+			// word-break: break-all;
+			font-family: "Gotham Pro", $main;
+		}
+	}
+}

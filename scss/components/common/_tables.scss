@@ -51,6 +51,39 @@
 		}
 	}
 
+	&.no-side-paddings{
+		tr{
+			td, th{
+				&:first-child{
+					padding-left: 11px;
+				}
+
+				&:last-child{
+					padding-right: 11px;
+				}
+			}
+		}
+	}
+
+	&.light{
+		tr{
+			background: #fff;
+
+			th{
+				background: #fff;
+				border-bottom: 2px solid $gray;
+			}
+
+			td{
+				border-bottom: 1px solid $gray;
+			}
+
+			&:hover{
+				background: darken(#fff, 10%);
+			}
+		}
+	}
+
 	.sort-by{
 		display: flex;
 		align-items: center;
