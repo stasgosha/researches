@@ -44,6 +44,10 @@
 		}
 	}
 
+	.asterisk{
+		color: #f00;
+	}
+
 	input[type="text"],
 	input[type="email"],
 	input[type="password"],
@@ -119,10 +123,6 @@
 		select{
 			border: 1px solid #ececec;
 			background: #ececec;
-
-			&:focus{
-				background: #fff;
-			}
 		}
 	}
 
@@ -493,6 +493,6 @@
 	}
 }
 
-.form.question-preview{
-	
+.support-form{
+	max-width: 345px;
 }

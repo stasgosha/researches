@@ -11,10 +11,18 @@
 
 		&.gray{
 			color: #9c9c9c;
+
+			a{
+				color: #9c9c9c;
+			}
 		}
 
 		&.dark{
 			color: $dark;
+
+			a{
+				color: $dark;
+			}
 		}
 
 		&.bigger{
