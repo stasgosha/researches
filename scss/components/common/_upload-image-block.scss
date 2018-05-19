@@ -47,6 +47,10 @@
 
 		.block-button{
 			margin-top: 25px;
+
+			&.small-margin{
+				margin-top: 10px;
+			}
 		}
 	}
 }

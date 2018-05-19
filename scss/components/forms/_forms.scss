@@ -8,7 +8,9 @@
 
 		+ label{
 			position: relative;
-			padding-left: 25px;
+			padding-left: 37px;
+			display: block;
+			cursor: pointer;
 
 			&:before{
 				content: '';
@@ -34,7 +36,7 @@
 				background: #ddd;
 				position: absolute;
 				left: 4px;
-				top: 5px;
+				top: calc(50% - 4px);
 				opacity: 0;
 				transition: all $t;
 			}
@@ -48,8 +50,13 @@
 
 		&:checked{
 			+ label{
+				&:before{
+					border-color: $lightgray;
+				}
+
 				&:after{
 					opacity: 1;
+					background: $lightgray;
 				}
 			}
 		}
