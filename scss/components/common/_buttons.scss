@@ -151,3 +151,21 @@
 		width: 100%;
 	}
 }
+
+.buttons-group{
+	display: flex;
+
+	> .item{
+		margin-right: 3px;
+
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+
+	&.big-margin{
+		> .item{
+			margin-right: 10px;
+		}
+	}
+}
