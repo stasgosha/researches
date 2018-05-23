@@ -1,8 +1,8 @@
 <?php $page_title = "Мои опросы" ?>
-<?php include('page-parts/header.inc.php'); ?>
+<?php include('page-parts/header-user.inc.php'); ?>
 
 <div class="main-section">
-	<?php include('page-parts/sidebar.inc.php'); ?>
+	<?php include('page-parts/sidebar-user.inc.php'); ?>
 	<div class="main-content">
 		<div class="main-content-inner">
 			<div class="page-content page-text">
@@ -72,10 +72,9 @@
 				</div>
 				<div class="researches-cards-list-wrapper">
 					<div class="researches-cards-list">
-						<!-- Layout of the card without old item goes below this card in the for() loop -->
 						<div class="research-card">
 							<div class="card-overlay"></div>
-							<a href="#" class="card-image" style="background-image: url()"></a>
+							<a href="research-page-user.php" class="card-image" style="background-image: url()"></a>
 							<div class="card-timer">
 								<div class="timer-block">
 									<div class="timer-icon">
@@ -126,50 +125,12 @@
 										<p>Среднее время прохождения: <br><strong>1ч 38мин</strong></p>
 									</div>
 								</div>
-								<!-- OLD -->
-								<!-- <div class="item">
-									<div class="card-toggle">
-										<div class="switch">
-											<input type="checkbox" id="card1">
-											<label for="card1"></label>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									
-								</div> -->
 							</div>
-							<!-- OLD -->
-							<!-- <div class="card-hidden-content">
-								<div class="card-section">
-									<div class="item">
-										<div class="card-stats">
-											<span class="count">100</span> коинов потрачено
-										</div>
-									</div>
-								</div>
-								<div class="card-section">
-									<div class="card-share">
-										<a href="#" class="item">
-											<span class="item-icon">
-												<i class="icon icon-print"></i>
-											</span>
-											<span class="item-text">Распечетать <br>анкету</span>
-										</a>
-										<a href="#" class="item">
-											<span class="item-icon">
-												<i class="icon icon-cloud"></i>
-											</span>
-											<span class="item-text">Загрузить <br>в облако</span>
-										</a>
-									</div>
-								</div>
-							</div> -->
 						</div>
 						<?php for ($i = 0; $i < 5; $i++): ?>
 							<div class="research-card">
 								<div class="card-overlay"></div>
-								<a href="#" class="card-image" style="background-image: url()"></a>
+								<a href="research-page-user.php" class="card-image" style="background-image: url()"></a>
 								<div class="card-timer">
 									<div class="timer-block">
 										<div class="timer-icon">

@@ -687,3 +687,15 @@
 .order-research-form{
 	max-width: 520px;
 }
+
+.controls-group{
+	display: flex;
+
+	> .item{
+		margin-right: 20px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
