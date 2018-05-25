@@ -637,9 +637,16 @@
 							background: transparent !important;
 							border-color: $dark;
 							filter: grayscale(0);
+							box-shadow: 0 0px 14px rgba(#000, .3);
 						}
 					}
 				}
+			}
+		}
+
+		&.cols-4{
+			> .item{
+				width: calc(25% - 11px);
 			}
 		}
 	}
@@ -697,5 +704,25 @@
 		&:last-child{
 			margin-right: 0;
 		}
+	}
+}
+
+.withdraw-form{
+	display: flex;
+
+	> .wallet-id{
+		flex: auto;
+		margin-right: 15px;
+	}
+
+	> .amount{
+		width: 140px;
+		flex: none;
+		margin-right: 15px;
+	}
+
+	> .button{
+		width: 150px;
+		flex: none;
 	}
 }

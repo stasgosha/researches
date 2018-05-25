@@ -22,27 +22,39 @@
 					<div class="header-content">
 						<div class="header-content-inner">
 							<div class="header-left">
-								<div class="stats-list">
-									<div class="item">
-										<div class="stats-block">
-											<i class="icon icon-dollar"></i>
-											<span>10$</span>
-											<a href="#" class="btn btn-default btn-small btn-gray">Пополнить</a>
+								<div class="financial-information-block">
+									<div class="block-list">
+										<div class="item">
+											<div class="item-title">Ожидает <i class="fa fa-info-circle"></i></div>
+											<div class="item-value">10$</div>
+										</div>
+										<div class="item">
+											<div class="item-title">Подтверждено <i class="fa fa-info-circle"></i></div>
+											<div class="item-value">25$</div>
+										</div>
+										<div class="item">
+											<div class="item-title">Готово к выводу <i class="fa fa-info-circle"></i></div>
+											<div class="item-value">150$</div>
 										</div>
 									</div>
-									<div class="item">
-										<div class="stats-block">
-											<i class="icon icon-star"></i>
-											<span>150</span>
+									<div class="block-buttons">
+										<a href="withdraw.php" class="btn btn-default btn-small btn-gray">Вывести</a>
+									</div>
+									<div class="block-list">
+										<div class="item">
+											<div class="item-title">Бонусы</div>
+											<div class="item-value">
+												<i class="icon icon-star"></i>
+												<span>150</span>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="header-center">
 								<ul class="header-nav">
-									<li><a href="#">Заказать <br>исследование</a></li>
-									<li><a href="#">Техническая <br>поддержка</a></li>
-									<li><a href="#">Создать <br>исследование</a></li>
+									<li><a href="#">Профиль</a></li>
+									<li><a href="#">Вопрос <br>ответ</a></li>
 								</ul>
 							</div>
 							<div class="header-right">

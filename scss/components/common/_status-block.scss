@@ -1,0 +1,28 @@
+.status-block{
+	display: flex;
+	align-items: center;
+
+	.block-icon{
+		width: 20px;
+		height: 20px;
+		flex: none;
+		margin-right: 10px;
+		background: #d3c8ba;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		font-size: 12px;
+
+		i{
+			display: block;
+		}
+	}
+
+	.block-text{
+		flex: auto;
+		font-size: 14px;
+		line-height: 16px;
+		color: $dark;
+	}
+}

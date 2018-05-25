@@ -1,0 +1,55 @@
+.financial-information-block{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+
+	.block-list{
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		> .item{
+			margin-right: 10px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			.item-title{
+				font-size: 12px;
+				line-height: 18px;
+
+				i{
+					color: $gray;
+					font-size: 12px;
+					display: inline-block;
+				}
+			}
+
+			.item-value{
+				font-size: 18px;
+				line-height: 18px;
+				display: flex;
+				align-items: center;
+
+				i{
+					display: block;
+					margin-right: 3px;
+				}
+			}
+		}
+	}
+
+	.block-buttons{
+		margin-right: 15px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
