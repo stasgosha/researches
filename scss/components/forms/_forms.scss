@@ -160,18 +160,18 @@
 		padding: 5px 10px;
 	}
 
-	select{
-		height: 38px;
-		font-size: 14px;
-		padding: 0 10px;
-		width: 100%;
-		outline: none !important;
-		transition: all $t;
-		border: 0;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-	}
+	// select{
+	// 	height: 38px;
+	// 	font-size: 14px;
+	// 	padding: 0 10px;
+	// 	width: 100%;
+	// 	outline: none !important;
+	// 	transition: all $t;
+	// 	border: 0;
+	// 	text-overflow: ellipsis;
+	// 	overflow: hidden;
+	// 	white-space: nowrap;
+	// }
 
 	&.gray-fields{
 		input[type="text"],
@@ -189,7 +189,7 @@
 			}
 		}
 
-		select{
+		.jcf-select{
 			border: 1px solid #ececec;
 			background: #ececec;
 		}
@@ -276,18 +276,36 @@
 
 .select{
 	overflow: hidden;
-	position: relative;
+	// position: relative;
+	// border: 1px solid #ddd;
+	// transition: all $t;
+
+	// &:focus{
+	// 	border-color: $dark;
+	// }
+
+	// select{
+	// 	width: calc(100% + 20px);
+	// 	background: transparent;
+	// }
+}
+
+.jcf-range{
+	margin: 0;
+}
+
+.jcf-select{
+	margin-bottom: 0;
 	border: 1px solid #ddd;
 	transition: all $t;
-
-	&:focus{
-		border-color: $dark;
-	}
-
-	select{
-		width: calc(100% + 20px);
-		background: transparent;
-	}
+	height: 38px;
+	font-size: 14px;
+	// padding: 0 10px;
+	width: 100%;
+	outline: none !important;
+	position: relative;
+	cursor: pointer;
+	min-width: 0;
 
 	&:after{
 		content: '';
@@ -298,6 +316,48 @@
 		position: absolute;
 		right: 13px;
 		top: calc(50% - 2px);
+		transition: all $t;
+	}
+
+	&.jcf-drop-active{
+		&:after{
+			transform: rotate(-180deg);
+		}
+	}
+
+	&.jcf-focus{
+		border-color: $dark;
+	}
+
+	.jcf-select-text{
+		line-height: 38px;
+		font-size: 14px;
+		margin: 0 23px 0 10px;
+		cursor: pointer;
+	}
+
+	.jcf-select-opener{
+		width: 38px;
+		height: 38px;
+		background: transparent;
+		cursor: pointer;
+	}
+}
+
+.jcf-select-drop-content{
+	border: 1px solid #ddd;
+	margin-top: 1px;
+
+	li{
+		border-bottom: 1px solid #ddd;
+
+		&:last-child{
+			border-bottom: 0;
+		}
+
+		.jcf-option:not(.jcf-disabled){
+			cursor: pointer;
+		}
 	}
 }
 

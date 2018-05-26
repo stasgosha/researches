@@ -170,7 +170,7 @@
 										</div>
 										<div class="margin-bottom-20px"></div>
 										<div class="select-range">
-											<img src="img/temp/range.png" alt="">
+											<input type="range" value="30,80" multiple>
 										</div>
 									</div>
 								</div>
@@ -212,7 +212,7 @@
 										</div>
 										<div class="coverage">Охват: <span>1000</span> чел.</div>
 										<div class="select-range">
-											<img src="img/temp/range.png" alt="">
+											<input value="20,80" type="range" multiple>
 										</div>
 										<div class="desired-quantity">
 											<div class="label">Желаемое <br>количество</div>

@@ -36,7 +36,7 @@
 							</div>
 							<div class="margin-bottom-20px"></div>
 							<div class="select-range">
-								<img src="img/temp/range.png" alt="">
+								<input value="20,80" type="range" multiple>
 							</div>
 						</div>
 					</div>

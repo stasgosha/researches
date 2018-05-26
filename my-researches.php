@@ -46,33 +46,45 @@
 						<p><strong>Отобразить по:</strong></p>
 					</div>
 					<div class="filters-list">
-						<div class="filter">
-							<select name="" id="">
-								<option value="0">Дате создания</option>
-								<option value="asc">По возрастанию</option>
-								<option value="desc">По убыванию</option>
-							</select>
-						</div>
-						<div class="filter">
-							<select name="" id="">
-								<option value="0">Дате завершения</option>
-								<option value="asc">По возрастанию</option>
-								<option value="desc">По убыванию</option>
-							</select>
-						</div>
-						<div class="filter">
-							<select name="" id="">
-								<option value="0">Стоимости</option>
-								<option value="asc">По возрастанию</option>
-								<option value="desc">По убыванию</option>
-							</select>
-						</div>
-						<div class="filter">
-							<select name="" id="">
-								<option value="0">Количество ответов</option>
-								<option value="asc">По возрастанию</option>
-								<option value="desc">По убыванию</option>
-							</select>
+						<div class="flex-container">
+							<div class="flex-row">
+								<div class="flex-col col-3">
+									<div class="filter">
+										<select name="" id="">
+											<option value="0">Дате создания</option>
+											<option value="asc">По возрастанию</option>
+											<option value="desc">По убыванию</option>
+										</select>
+									</div>
+								</div>
+								<div class="flex-col col-3">
+									<div class="filter">
+										<select name="" id="">
+											<option value="0">Дате завершения</option>
+											<option value="asc">По возрастанию</option>
+											<option value="desc">По убыванию</option>
+										</select>
+									</div>
+								</div>
+								<div class="flex-col col-3">
+									<div class="filter">
+										<select name="" id="">
+											<option value="0">Стоимости</option>
+											<option value="asc">По возрастанию</option>
+											<option value="desc">По убыванию</option>
+										</select>
+									</div>
+								</div>
+								<div class="flex-col col-3">
+									<div class="filter">
+										<select name="" id="">
+											<option value="0">Количество ответов</option>
+											<option value="asc">По возрастанию</option>
+											<option value="desc">По убыванию</option>
+										</select>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

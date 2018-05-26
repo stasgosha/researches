@@ -1,4 +1,4 @@
-@mixin col-generator ($prefix:'.col', $prop: 'flex-basis', $total-columns:12) {
+@mixin col-generator ($prefix:'.col', $prop: 'width', $total-columns:12) {
 	$col-widths: ();
 	@for $i from 1 through $total-columns {
 		$w: ($i /$total-columns);
@@ -15,6 +15,7 @@
 }
 
 .flex-container{
+	width: 100%;
 	@include col-generator();
 	@include col-generator('.offset', 'margin-left');
 	flex-wrap: wrap;
