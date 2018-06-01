@@ -344,6 +344,16 @@
 	}
 }
 
+.select.small{
+	.jcf-select{
+		height: 32px;
+
+		.jcf-select-text{
+			line-height: 30px;
+		}
+	}
+}
+
 .jcf-select-drop-content{
 	border: 1px solid #ddd;
 	margin-top: 1px;

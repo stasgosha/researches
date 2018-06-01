@@ -17,6 +17,18 @@ $(document).ready(function(){
 		});
 	});
 
+	// Notifications
+	$('.notification-card .card-opener').click(function(){
+		$(this).siblings('.card-info').find('.card-hidden-text').slideToggle(300);
+		$(this).parent().toggleClass('opened');
+	});
+
+	// Question Editor
+	$('.editor .minimizeBtn').click(function(){
+		$(this).closest('.editor').children('.editor-content').slideToggle(300);
+		$(this).closest('.editor').toggleClass('opened');
+	});
+
 	// Research card
 	$(function(){
 		$('.research-card').hover(function(){

@@ -50,7 +50,27 @@
 								<div class="round-buttons-list">
 									<a href="#"><i class="icon icon-grid"></i></a>
 									<a href="#"><i class="icon icon-question"></i></a>
-									<a href="#"><i class="icon icon-notifications"></i></a>
+								</div>
+								<div class="user-notifications">
+									<div class="notifications-icon">
+										<i class="icon icon-notifications"></i>
+									</div>
+									<span class="count">2</span>
+									<div class="popover-block corner-right">
+										<div class="item">
+											<p class="item-title"><strong>Пополнение баланса</strong></p>
+											<p>Ваш баланс пополнен на 100р.</p>
+										</div>
+										<div class="item">
+											<p class="item-title"><strong>Новые ответы</strong></p>
+											<p>10 новых ответов на опрос</p>
+										</div>
+										<div class="item">
+											<div class="flex-center">
+												<a href="notifications.php" class="">Показать все</a>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="user-block">
 									<div class="user-avatar">

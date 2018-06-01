@@ -1,7 +1,7 @@
 .question-editor{
 	display: flex;
 
-	.editor-sidebar{
+	> .editor-sidebar{
 		width: 215px;
 		margin-right: 15px;
 		flex: none;
@@ -14,8 +14,9 @@
 		}
 	}
 
-	.editor-content{
+	> .editor-content{
 		display: flex;
+		flex: auto;
 		flex-direction: column;
 
 		.edit-question-section{
@@ -43,4 +44,298 @@
 			}
 		}
 	}
+}
+
+.editor{
+	p{
+		font-size: 10px;
+		line-height: 14px;
+		color: $dark;
+	}
+
+	> .editor-header{
+		padding: 5px 20px;
+		min-height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		background: #dfdfdf;
+
+		.title{
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: 400;
+			color: $dark;
+		}
+
+		.actions-list{
+			display: flex;
+			align-items: center;
+
+			> .item{
+				margin-right: 8px;
+				color: #000;
+				cursor: pointer;
+				transition: all $t;
+				font-size: 16px;
+
+				&:hover{
+					color: $text-light-2;
+				}
+
+				&:last-child{
+					margin-top: 0;
+				}
+
+				i{
+					display: block;
+				}
+			}
+		}
+	}
+
+	> .editor-content{
+		background: #f0f0f0;
+
+		.editor-section{
+			padding: 15px 20px;
+		}
+
+		.question-text{
+			margin-bottom: 10px;
+		}
+
+		.question-params{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			> .item{}
+		}
+	}
+
+	&:not(.opened){
+		> .editor-content{
+			display: none;
+		}
+	}
+
+	.editor-row{
+		display: flex;
+		width: 100%;
+		margin-bottom: 10px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&.align-center{
+			align-items: center;
+		}
+
+		&:not(.with-columns){
+			.left,
+			.right{
+				width: 75px;
+				flex: none;
+			}
+
+			.left{
+				padding-right: 8px;
+			}
+
+			.center{
+				flex: auto;
+			}
+
+			.right{
+				padding-left: 8px;
+			}
+		}
+
+		&.with-columns{
+			padding: 0 20px;
+			flex-wrap: wrap;
+
+			.editor-col{
+				width: calc(50% - 5px);
+				display: flex;
+				align-items: center;
+
+				&.align-start{
+					align-items: flex-start;
+				}
+			}
+		}
+	}
+}
+
+.controls-list{
+	display: flex;
+	align-items: center;
+
+	> .item{
+		margin-right: 15px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.control-link{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+
+	.link-icon{
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		background: #707070;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 5px;
+	}
+
+	.link-text{
+		font-size: 10px;
+		line-height: 14px;
+		color: $dark;
+		transition: all $t;
+
+		&:hover{
+			color: $gray;
+		}
+	}
+}
+
+.question-switch{
+	display: flex;
+	align-items: center;
+
+	.switch-text{
+		font-size: 10px;
+		margin-right: 5px;
+
+		&:last-child{
+			margin-right: 0;
+			margin-left: 5px;
+		}
+	}
+
+	.switch-control{
+		input{
+			display: none;
+
+			+ label{
+				display: block;
+				width: 40px;
+				height: 16px;
+				color: #a7a2a2;
+				border: 1px solid #a7a2a2;
+				position: relative;
+				cursor: pointer;
+				transition: all $t;
+				border-radius: 8px;
+
+				&:before{
+					content: '';
+					display: block;
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					background: #a7a2a2;
+					position: absolute;
+					top: 2px;
+					left: 2px;
+					transition: all $t;
+				}
+
+				&:after{
+					content: 'Нет';
+					display: block;
+					position: absolute;
+					width: 22px;
+					height: 14px;
+					font-size: 10px;
+					line-height: 14px;
+					left: 12px;
+					text-align: center;
+					transition: all $t;
+				}
+
+				&:hover{
+					&:before{
+						background: $dark;
+					}
+				}
+			}
+
+			&:checked{
+				+ label{
+					color: $dark;
+					border-color: $dark;
+
+					&:before{
+						left: 25px;
+						background: $dark;
+					}
+
+					&:after{
+						content: 'Да';
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.editor-timer{
+	display: flex;
+
+	.item{
+		width: 55px;
+		margin-right: 5px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.fields-list{
+	display: flex;
+
+	> .item{
+		margin-right: 20px;
+		display: flex;
+		align-items: center;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		.item-label{
+			margin-right: 5px;
+			font-size: 10px;
+			line-height: 14px;
+			color: $dark;
+		}
+
+		input{
+			width: 60px;
+		}
+	}
+}
+
+.answer-image{
+	height: 140px;
+	width: 100%;
+	background: #dfdfdf;
 }

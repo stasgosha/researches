@@ -9,6 +9,15 @@
 	text-align: center;
 }
 
+.text-right{
+	text-align: right;
+}
+
+.flex-right{
+	display: flex;
+	justify-content: flex-end;
+}
+
 .italic{
 	font-style: italic;
 }
@@ -19,8 +28,8 @@
 
 .italic-placeholder{
 	&::placeholder{
-font-style:  italic;
- 	}
+		font-style:  italic;
+	}
 }
 
 .nobr{

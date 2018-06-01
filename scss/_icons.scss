@@ -1,6 +1,22 @@
 .icon{
 	display: inline-block;
 
+	&.pointer{
+		cursor: pointer;
+	}
+
+	&.big{
+		width: 32px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&.black{
+		color: #000;
+	}
+
 	&.icon-dollar{
 		background: url(../img/icons/dollar.png) no-repeat center center;
 		width: 18px;
